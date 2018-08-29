@@ -5,8 +5,14 @@ import android.os.Bundle;
 
 import com.example.shraboni.sampleimplementation.R;
 import com.example.shraboni.sampleimplementation.SampleImplementationapp;
+import com.example.shraboni.sampleimplementation.data.db.DataManager;
+
+import javax.inject.Inject;
 
 public class LoginActivity extends AppCompatActivity implements ILoginView{
+
+    @Inject
+    DataManager dataManager;
 
     private ILoginPresenter presenter;
 

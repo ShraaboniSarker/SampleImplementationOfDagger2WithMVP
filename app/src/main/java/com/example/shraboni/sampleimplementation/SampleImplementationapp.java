@@ -5,6 +5,8 @@ import android.content.Context;
 
 import com.example.shraboni.sampleimplementation.data.db.DataManager;
 import com.example.shraboni.sampleimplementation.di.custom_annotation.component.ApplicationComponent;
+
+import com.example.shraboni.sampleimplementation.di.custom_annotation.component.DaggerApplicationComponent;
 import com.example.shraboni.sampleimplementation.di.custom_annotation.module.ApplicationModule;
 
 import javax.inject.Inject;
