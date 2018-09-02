@@ -14,7 +14,8 @@ public class LoginActivity extends AppCompatActivity implements ILoginView{
     @Inject
     DataManager dataManager;
 
-    private ILoginPresenter presenter;
+    @Inject
+    ILoginPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -14,6 +14,7 @@ import javax.inject.Singleton;
 @Singleton
 public class DbHelper extends SQLiteOpenHelper {
     public static final String USER_TABLE_NAME = "users";
+    public static final int USER_TABLE_VERSION = 1;
     public static final String USER_COLUMN_USER_ID = "id";
     public static final String USER_COLUMN_USER_NAME = "usr_name";
     public static final String USER_COLUMN_USER_ADDRESS = "usr_add";
@@ -22,7 +23,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     @Inject
     public DbHelper(@ApplicationContext Context context) {
-        super(context,USER_TABLE_NAME,null,0);
+        super(context,USER_TABLE_NAME,null,USER_TABLE_VERSION);
     }
 
 
